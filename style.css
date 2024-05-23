@@ -97,6 +97,8 @@ a {
 
 .readmore-link-dark {
   color: white;
+  display: flex;
+  align-items: center;
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
@@ -150,6 +152,26 @@ a {
   -o-border-radius: 20px;
 }
 
+
+.hero-vegan-myth-2 {
+  display: none;
+  align-items: end;
+  color: #236130;
+  background-color: #dcd3b3;
+  padding: 30px;
+  padding-bottom: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero-vegan-myth-2 p {
+  margin-bottom: 40px;
+}
+
 .hero-animal-rights {
   color: #236130;
   background-color: #e3a391;
@@ -161,6 +183,26 @@ cursor: pointer;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.hero-animal-rights-2 {
+  display: none;
+  color: #236130;
+  align-items: end;
+  background-color: #e3a391;
+  padding: 30px;
+  padding-bottom: 0;
+cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero-animal-rights-2 p {
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .about-detail {
@@ -213,4 +255,48 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.about-img {
+  width: 100%;
+}
+
+@media (max-width: 768px) { 
+  .cert, .why {
+    flex-direction: column-reverse;
+  }
+
+  .hero-animal-rights-2 {
+    flex-direction: column;
+  }
+
+  .hero-animal-rights-2>div>img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-first-grid {
+    width: auto;
+  }
+
+  .hero-second-grid {
+    width: auto;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .vegan-cert-img {
+    flex-direction: column;
+  }
+
+  .why-img {
+    width: 100%;
+  }
 }
