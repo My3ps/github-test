@@ -66,6 +66,20 @@ a {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+}
+
+.hero-why p {
+  font-weight: 320;
+}
+
+.hero-why:hover {
+  background-color: rgba(154, 188, 5, 1);
+  box-shadow: 0 0 20px rgba(154, 188, 5, 1);
 }
 
 .hero-photos {
@@ -86,13 +100,26 @@ a {
 .readmore-link {
   padding: 6px;
   padding-left: 10px;
+  color: #236130;
   padding-right: 10px;
   background-color: rgba(255, 255, 255, 0.5);
+  transition: all 500ms ease-out;
   border-radius: 99px;
   -webkit-border-radius: 99px;
   -moz-border-radius: 99px;
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+}
+
+
+.readmore-link:hover {
+  background-color: #cdba54;
+  color: white;
+  border: white solid 1px;
 }
 
 .readmore-link-dark {
@@ -103,11 +130,18 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   background-color: rgb(35, 97, 48, 0.5);
+  transition: all 500ms ease;
   border-radius: 99px;
   -webkit-border-radius: 99px;
   -moz-border-radius: 99px;
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
+}
+
+.readmore-link-dark:hover {
+  background-color: transparent;
+  border: #236130 solid 1px;
+  color: #236130;
 }
 
 .photos-link {
@@ -118,6 +152,7 @@ a {
   align-items: center;
   gap: 4px;
   cursor: pointer;
+  transition: all 500ms linear;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 99px;
@@ -125,6 +160,22 @@ a {
   -moz-border-radius: 99px;
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+}
+
+.photos-link:hover {
+  background-color: transparent;
+  color: #236130;
+  border: #236130 solid 1px;
+}
+.photos-link > svg {
+}
+
+p {
+
 }
 
 .hero-navigation {
@@ -141,7 +192,37 @@ a {
 
 .hero-vegan-myth {
   color: #236130;
+  height: 288px;
   background-color: #dcd3b3;
+  padding: 30px;
+  padding-bottom: 0;
+  cursor: pointer;
+  transition: all 200ms ease-out;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero-vegan-myth:hover {
+  background-color: #F8F1D9;
+  box-shadow: 0 0 20px rgba(154, 188, 5, 1);
+}
+
+.hero-vegan-myth-2 {
+  background-color: #F8F1D9;
+  box-shadow: 0 0 20px rgba(154, 188, 5, 1);
+
+}
+
+.hero-vegan-myth-2 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #236130;
+  background-color: #F8F1D9;
   padding: 30px;
   padding-bottom: 0;
   cursor: pointer;
@@ -152,20 +233,8 @@ a {
   -o-border-radius: 20px;
 }
 
-
-.hero-vegan-myth-2 {
-  display: none;
-  align-items: end;
-  color: #236130;
-  background-color: #dcd3b3;
-  padding: 30px;
-  padding-bottom: 0;
-  cursor: pointer;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+.hero-animal-rights h1 {
+  margin-bottom: 20px;
 }
 
 .hero-vegan-myth-2 p {
@@ -173,10 +242,15 @@ a {
 }
 
 .hero-animal-rights {
+  height: 288px;
   color: #236130;
   background-color: #e3a391;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px;
   padding-bottom: 0;
+  transition: all 200ms ease-out;
 cursor: pointer;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -185,19 +259,36 @@ cursor: pointer;
   -o-border-radius: 20px;
 }
 
+.hero-animal-rights:hover {
+  background-color: rgba(255, 184, 164, 1);
+  box-shadow: 0 0 20px rgba(154, 188, 5, 1);
+}
+
+.hero-animal-rights-2 > div > h1 {
+  text-align: center;
+}
+
 .hero-animal-rights-2 {
   display: none;
+  height: 288px;
+  gap: 20px;
   color: #236130;
-  align-items: end;
-  background-color: #e3a391;
+  flex-direction: column;  
+  background-color: rgba(255, 184, 164, 1);
   padding: 30px;
   padding-bottom: 0;
+  transition: all 200ms ease-out;
 cursor: pointer;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.hero-animal-rights-2:hover {
+  background-color: rgba(255, 184, 164, 1);
+  box-shadow: 0 0 20px rgba(154, 188, 5, 1);
 }
 
 .hero-animal-rights-2 p {
@@ -220,6 +311,10 @@ cursor: pointer;
     gap: 20px;
     padding-top: 40px;
     color: white;
+}
+
+.vegan-certification p {
+  font-weight: 310;
 }
 
 .vegan-cert-img {
@@ -255,6 +350,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    font-weight: 300;
 }
 
 .about-img {
@@ -299,4 +395,8 @@ cursor: pointer;
   .why-img {
     width: 100%;
   }
+}
+
+.top:hover {
+  background-color: transparent;
 }
